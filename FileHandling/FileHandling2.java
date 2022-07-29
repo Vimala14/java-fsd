@@ -12,16 +12,16 @@ import java.util.List;
 public class FileHandling2 {
 public static void createFileUsingNIO() throws IOException
 {
-Path path=Paths.get("D:\\files\\testFileNIO3.txt");
+Path path=Paths.get("D:\\files\\testFile.txt");
 //write data using file class
 String input="Welcome";
 byte array[]=input.getBytes();
 Files.write(path, array, StandardOpenOption.CREATE,StandardOpenOption.APPEND);
 System.out.println("Data Written Successfully");
 //if you want to write data of list to files directly
-Path path1=Paths.get("D:\\files\\testFileNIO3.txt");
+Path path1=Paths.get("D:\\files\\testFile.txt");
 //write data using Files class
-List<String> list=Arrays.asList("\nThis is my first line","This is my secondLine");
+List<String> list=Arrays.asList("\nfirst line","my secondLine");
 Files.write(path1, list, StandardOpenOption.CREATE,StandardOpenOption.APPEND);
 System.out.println("Lines Written Successfully");
 }

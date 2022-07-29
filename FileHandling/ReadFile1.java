@@ -11,7 +11,7 @@ public class ReadFile1 {
 public static void readDataUsingNIO() throws IOException
 {
 List<String> list=Collections.emptyList();
-Path path= Paths.get("D:\\files\\testFileNIO3.txt");
+Path path= Paths.get("D:\\files\\testFile.txt");
 list= Files.readAllLines(path,StandardCharsets.UTF_8);
 Iterator<String> it= list.iterator();
 while(it.hasNext()) {
